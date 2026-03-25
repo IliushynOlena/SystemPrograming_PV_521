@@ -41,13 +41,13 @@ namespace _01_IntroToProcesses
                 }
                 
             }
+            
             */
-
             //Process.Start("MicrosoftEdge.exe", "google.com stackoverflow.com");
             //Process.Start("Calc.exe");
             //Process.Start(@"C:\Program Files\Google\Chrome\Application\chrome.exe","google.com stackoverflow.com");
 
-
+            
             ProcessStartInfo info = new ProcessStartInfo()
             {
                 FileName = @"notepad",
@@ -58,7 +58,7 @@ namespace _01_IntroToProcesses
             Process pr = Process.Start(info);
             Console.ReadKey();
             //pr.Kill();//End TAsk
-            //pr.CloseMainWindow();//Alt+F4
+            pr.CloseMainWindow();//Alt+F4
             //pr.Close();//clear reference
 
             Console.WriteLine("Wait for exit....");
@@ -66,7 +66,7 @@ namespace _01_IntroToProcesses
             pr.WaitForExit();
             Console.WriteLine($"Exit code : {pr.ExitCode}");
             Console.WriteLine($"Exit time : {pr.ExitTime}");
-
+            
             Console.ReadKey();
         }
     }

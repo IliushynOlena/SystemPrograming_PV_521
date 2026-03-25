@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_IntroToProcesses", "01_IntroToProcesses\01_IntroToProcesses.csproj", "{BAB02F24-83BC-4486-AB43-0AD6FCEFBD22}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_TaskManager", "02_TaskManager\02_TaskManager.csproj", "{B3407C19-A8DA-4535-80A5-482D31A8D716}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Threads", "03_Threads\03_Threads.csproj", "{F5288F5B-25B2-40C5-9343-291AC6246BDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B3407C19-A8DA-4535-80A5-482D31A8D716}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3407C19-A8DA-4535-80A5-482D31A8D716}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3407C19-A8DA-4535-80A5-482D31A8D716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5288F5B-25B2-40C5-9343-291AC6246BDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5288F5B-25B2-40C5-9343-291AC6246BDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5288F5B-25B2-40C5-9343-291AC6246BDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5288F5B-25B2-40C5-9343-291AC6246BDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
