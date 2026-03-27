@@ -87,28 +87,28 @@
 
 
             #region TestThreads
-            //ConsoleKeyInfo input;
-            //do 
-            //{ 
-            //    input = Console.ReadKey();
-            //    Thread thread = new Thread(InfinityLoop);
-            //    thread.Start();
-            //    //InfinityLoop();
+            ConsoleKeyInfo input;
+            do
+            {
+                input = Console.ReadKey();
+                Thread thread = new Thread(InfinityLoop);
+                thread.Start();
+                //InfinityLoop();
 
-            //} while (input.Key != ConsoleKey.Escape);
+            } while (input.Key != ConsoleKey.Escape);
 
 
             #endregion
 
             #region Wait Thread
-            Thread thread = new Thread(Method);
-            Console.WriteLine("Thread is going start.....");
-            thread.Start();
+            //Thread thread = new Thread(Method);
+            //Console.WriteLine("Thread is going start.....");
+            //thread.Start();
 
-            Thread.Sleep(200);
-            Console.WriteLine("Waiting for the end thread");
-            thread.Join();  
-            Console.WriteLine("Program was ended...");
+            //Thread.Sleep(200);
+            //Console.WriteLine("Waiting for the end thread");
+            //thread.Join();  
+            //Console.WriteLine("Program was ended...");
             #endregion
         }
         static void InfinityLoop()
