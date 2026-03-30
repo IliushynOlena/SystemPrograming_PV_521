@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Threads", "03_Threads\03
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_ThreadSync", "04_ThreadSync\04_ThreadSync.csproj", "{BBAE37BF-78DF-488D-B4DC-F2B7D6B9B71F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Tasks", "05_Tasks\05_Tasks.csproj", "{D0BC5C0B-6F5E-4B28-B962-381BDF100151}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{BBAE37BF-78DF-488D-B4DC-F2B7D6B9B71F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBAE37BF-78DF-488D-B4DC-F2B7D6B9B71F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBAE37BF-78DF-488D-B4DC-F2B7D6B9B71F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0BC5C0B-6F5E-4B28-B962-381BDF100151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0BC5C0B-6F5E-4B28-B962-381BDF100151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0BC5C0B-6F5E-4B28-B962-381BDF100151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0BC5C0B-6F5E-4B28-B962-381BDF100151}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

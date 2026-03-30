@@ -145,6 +145,7 @@ namespace _04_ThreadSync
 
             for (int i = 0; i < threads.Length; i++)
             {
+       
                 threads[i] = new Thread(counter.UpdateFiels);
                 threads[i].Start();
             }
