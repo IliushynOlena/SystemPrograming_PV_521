@@ -19,24 +19,72 @@
             /// some code
             Console.WriteLine("End method Display");
         }
+        static void Method1()
+        {
+            for (int i = 0; i < 50; i++)
+            {
+                Console.WriteLine(i);
+            }
+        }
+        //static void Method2()
+        //{
+        //    for (int i = 51; i < 100; i++)
+        //    {
+        //        Console.WriteLine(i);
+        //    }
+        //}
+        //static void Method3()
+        //{
+        //    for (int i = 101; i < 150; i++)
+        //    {
+        //        Console.WriteLine(i);
+        //    }
+        //}
         static void Main(string[] args)
         {
+
+            //ThreadStart
+            //Thread thread1 = new Thread(Method1);//void ()
+            //Thread thread2 = new Thread(delegate ()
+            //{
+            //    for (int i = 51; i < 100; i++)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+
+            //});//void (object obj)
+            //Thread thread3 = new Thread(() =>
+            //{
+            //    for (int i = 101; i < 150; i++)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //});
+
+            //thread1.Start();
+            //thread2.Start();
+            //thread3.Start();
+
+
+
+
             #region Task            
+            /*
+            Task task1 = new Task(Display); //Task (Thread t = new Thread())
+            task1.Start();
 
-            //Task task1 = new Task(Display); //Task (Thread t = new Thread())
-            //task1.Start();
+            //start automatically
 
-            ////start automatically
+            Task task2 = Task.Factory.StartNew(() => Console.WriteLine($"Task 2 : Id " +
+                $"{Thread.CurrentThread.ManagedThreadId}"));
 
-            //Task task2 = Task.Factory.StartNew(() => Console.WriteLine($"Task 2 : Id " +
-            //    $"{Thread.CurrentThread.ManagedThreadId}"));
-
-            //Task task3  = Task.Run(() => Console.WriteLine($"Task 3 . From thread : " +
-            //    $"{Thread.CurrentThread.ManagedThreadId}"));
+            Task task3 = Task.Run(() => Console.WriteLine($"Task 3 . From thread : " +
+                $"{Thread.CurrentThread.ManagedThreadId}"));
 
 
-            //Console.WriteLine("End Method Main ");
-            //Console.ReadKey();
+            Console.WriteLine("End Method Main ");
+            Console.ReadKey();
+            */
             #endregion
             #region Task Methods
             //Task task1 = new Task(Display); //Task (Thread t = new Thread())
@@ -65,15 +113,15 @@
                 task2[i] = Task.Run(() =>
                 {
                     Thread.Sleep(random.Next(5000));
-                    Console.WriteLine($"Task {++j} work" );
+                    Console.WriteLine($"Task {++j} work");
                 });
             }
 
             Task.WaitAny(task2);
             Console.WriteLine("Any task have done!");
             Console.ReadKey();
+            
             */
-
             #endregion
             #region ContinueWith
             /*
@@ -95,12 +143,13 @@
             */
             #endregion
             #region Task Return
-            /*
+        
             Task<int> task = new Task<int>(() => Factorial(5, 88, 9, "Hello "));
 
             Task<int> sumTask = task.ContinueWith(Summa);
 
             task.Start();
+         
             Console.WriteLine(task.Result);
             Console.WriteLine("------------------------------------");
             Console.WriteLine(sumTask.Result);
@@ -119,7 +168,7 @@
             Console.WriteLine($"{b.Title} . {b.Author}");
 
             Console.ReadLine();
-            */
+            
             #endregion
         }
         static int Summa(Task<int> prev_task)
